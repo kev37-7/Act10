@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './Components/Header'
-import Section from './Components/Section'
-import Footer from './Components/Footer'
+import React from 'react';
+import { Header } from './Components/Header/Header';
+import { Sidebar } from './Components/Sidebar/Sidebar';
+import { Ssection } from './Components/Section/Ssection';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Header />
-      <Section />
-      <Footer />
+      <Sidebar />
+      <Ssection />
+      
     </>
-  )
+  );
 }
 
 export default App
